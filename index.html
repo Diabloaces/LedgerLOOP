@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ledger Loop — Books that close themselves</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="brand"><span class="mark"></span>Ledger Loop</div>
+    <div class="navlinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="navcta" href="#contact">Book a walkthrough</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HOME / HERO -->
+  <section id="home" class="hero wrap">
+    <div>
+      <div class="eyebrow">Bookkeeping, automated</div>
+      <h1>Books that <em>close</em><br>themselves.</h1>
+      <p class="lede">Ledger Loop reads every invoice, receipt, and bank line the moment it lands, matches it, tags it, and reconciles it — so your books are ready before your coffee's cold.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="#contact">Start closing faster</a>
+        <a class="btn-ghost" href="#services">See how it works</a>
+      </div>
+    </div>
+
+    <div class="ledger-card" id="ledgerCard">
+      <div class="ledger-head">
+        <span>OCT LEDGER — LIVE</span>
+        <div class="dot-row"><span></span><span></span><span></span></div>
+      </div>
+      <div class="ledger-rows" id="ledgerRows"></div>
+      <div class="ledger-foot">
+        <div>
+          <div class="balance-label">RUNNING BALANCE</div>
+          <div class="balance-amt" id="balanceAmt">$0.00</div>
+        </div>
+        <div class="stamp" id="stamp">BALANCED ✓</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about-grid">
+      <div>
+        <div class="eyebrow">About us</div>
+        <h2>Started at 1am, over a shoebox of receipts.</h2>
+        <div class="about-stat">
+          <div><div class="num">14 hrs</div><div class="lbl">a month our founder lost to manual entry</div></div>
+          <div><div class="num">6</div><div class="lbl">people on the team today</div></div>
+          <div><div class="num">2024</div><div class="lbl">the year we stopped typing receipts</div></div>
+        </div>
+      </div>
+      <div class="about-copy reveal">
+        <p>Ledger Loop started when our founder, running a three-person design studio, spent every month-end re-typing the same invoices into three different tools. Nothing was wrong with the numbers — the problem was that a person still had to move them.</p>
+        <p>So we built the tool that ends that. Ledger Loop reads your bank feed, your invoices, and your receipts as they arrive, learns your chart of accounts, and reconciles them in real time. No more end-of-month scramble, no more mystery transactions.</p>
+        <p>We're a small team of engineers and ex-bookkeepers building for small businesses who'd rather spend their evenings anywhere but a spreadsheet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Services</div>
+        <h2>Three tools. One closed set of books.</h2>
+        <p>Each one runs on its own, but they're built to hand off to each other automatically.</p>
+      </div>
+      <div class="services-grid reveal">
+        <div class="service">
+          <div class="si">🔗</div>
+          <h3>Auto-Reconciliation</h3>
+          <p>Every bank line is matched against its invoice or receipt the moment both exist. Unmatched items surface immediately, not at month-end.</p>
+        </div>
+        <div class="service">
+          <div class="si">🏷️</div>
+          <h3>Categorization Engine</h3>
+          <p>Learns your chart of accounts from your first month of data, then tags every new transaction the way you would — and gets more accurate over time.</p>
+        </div>
+        <div class="service">
+          <div class="si">📕</div>
+          <h3>Month-End Autopilot</h3>
+          <p>Closes the books on schedule and only flags what's genuinely unusual: a duplicate charge, a missing receipt, a category that doesn't fit the pattern.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">How it works</div>
+        <h2>Connect it once. Forget it's there.</h2>
+      </div>
+      <div class="steps reveal">
+        <div class="step">
+          <div class="sn">Step 1</div>
+          <h3>Connect your accounts</h3>
+          <p>Link your bank, card, and invoicing tool. Ledger Loop starts reading transactions the same day.</p>
+        </div>
+        <div class="step">
+          <div class="sn">Step 2</div>
+          <h3>Review the first close</h3>
+          <p>We walk through your first month together and confirm the categories match how you actually run your business.</p>
+        </div>
+        <div class="step">
+          <div class="sn">Step 3</div>
+          <h3>Let it run</h3>
+          <p>From month two on, your books close on their own. You only hear from us when something needs a human decision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Pricing</div>
+        <h2>Priced for the business you have now.</h2>
+        <p>Every plan includes auto-reconciliation and categorization. Switch or cancel anytime.</p>
+      </div>
+      <div class="pricing-grid reveal">
+        <div class="plan">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price">$29<span>/mo</span></div>
+          <ul>
+            <li>1 bank connection</li>
+            <li>Up to 150 transactions/mo</li>
+            <li>Monthly close report</li>
+          </ul>
+          <a class="btn-ghost" href="#contact">Choose Starter</a>
+        </div>
+        <div class="plan featured">
+          <div class="plan-name">Growth</div>
+          <div class="plan-price">$79<span>/mo</span></div>
+          <ul>
+            <li>3 bank connections</li>
+            <li>Unlimited transactions</li>
+            <li>Month-End Autopilot</li>
+            <li>Priority review calls</li>
+          </ul>
+          <a class="btn-primary" href="#contact">Choose Growth</a>
+        </div>
+        <div class="plan">
+          <div class="plan-name">Studio</div>
+          <div class="plan-price">$149<span>/mo</span></div>
+          <ul>
+            <li>Unlimited connections</li>
+            <li>Multi-entity books</li>
+            <li>Dedicated bookkeeper review</li>
+          </ul>
+          <a class="btn-ghost" href="#contact">Choose Studio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Contact</div>
+        <h2>Tell us about your books.</h2>
+        <p>Fill this in and we'll reply within a business day — or skip ahead and book a 15-minute walkthrough.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="reveal" onsubmit="event.preventDefault(); document.getElementById('formNote').style.display='block';">
+          <div class="field"><label>Name</label><input type="text" required></div>
+          <div class="field"><label>Work email</label><input type="email" required></div>
+          <div class="field"><label>Business name</label><input type="text"></div>
+          <div class="field"><label>What's slowing your books down?</label><textarea rows="4"></textarea></div>
+          <button class="btn-primary" style="border:none; cursor:pointer;" type="submit">Send message</button>
+          <p id="formNote" style="display:none; margin-top:14px; font-size:13.5px; color:var(--brass-dim);">Thanks — this is a demo form, so nothing was actually sent.</p>
+        </form>
+        <div class="contact-info reveal">
+          <div class="item"><div class="k">EMAIL</div><div class="v"><a href="mailto:hello@ledgerloop.co">hello@ledgerloop.co</a></div></div>
+          <div class="item"><div class="k">WALKTHROUGH</div><div class="v"><a href="#contact">Book a 15-minute call</a></div></div>
+          <div class="item"><div class="k">STUDIO</div><div class="v">Based remote-first · replies in 1 business day</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Ledger Loop. All rights reserved.</div>
+    <div class="mono">Demo site — built for AI website generation task</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
